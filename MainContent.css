@@ -1,0 +1,108 @@
+
+main {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+.box {
+	width:50%;
+	height: 500px;
+	float: left;
+}
+
+.box a {
+	margin-top: 20px;
+	text-decoration:none;
+	color:orange;
+	display:block;
+}
+
+.box a:hover {
+	color: #ca4824;
+}
+
+#red {
+	padding: 80px;
+}
+
+.img1 {
+	background-image: url('MainBanner.jpg');
+	background-size:cover;
+}
+
+.img2 {
+	background-image: url('MainBanner2.jpg');
+	background-size:cover;
+}
+
+.img3 {
+	background-image: url('MainBanner3.jpg');
+	background-size:cover;
+}
+
+.flextest {
+	display: block;
+	width: 90vw;
+	height: auto;
+	border: 1px solid grey;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.flextest h1 {
+	display:block;
+	padding: 10px;
+	border-left: 2px solid orange;
+}
+
+.bottomtest {
+	margin: 0 auto;
+	width: 90vw;
+	height: 80px;
+	bottom: 20px !important;
+	color: white;
+}
+
+#Continue {
+	display:none;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.box {
+		width: 100%;
+	}
+	
+	.mid {
+		display: none;
+	}
+	
+	#red {
+		height: auto;
+		padding: 40px;
+	}
+	
+	#green {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#red {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.flextest .img1 {
+		width: 100%;
+	}
+	
+	#red {
+		padding: 10px;
+		padding-bottom: 30px;
+		height: auto;
+	}
+}
