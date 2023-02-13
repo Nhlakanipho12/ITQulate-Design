@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 
-<html lang="en-us">
+<html lang="en-us" >
 
 <head>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+   
   <title> ITQULATE SOLUTIONS | SYSTEMS, IT INFRASTRUCTURE SOLUTIONS </title>
   
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Footer.css">
   <link rel="stylesheet" href="MainContent.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="nav.css">
 
+  
+  <script src="functions.js"></script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Services, Information Technology, Security, Security Services, Cleaning Services, IT, IT Services, Networking">
   <meta name="description" content="IT Services">
   <meta name="author" content="Akwande Creations">
@@ -21,104 +26,177 @@
   
 </head>
 
-<body>
+<body >
+
+<header>
+
+    <a id="LogoImage" href="#"> <img src="Images/itqulatelogo.png" width="102px" height="32px"> </a>
+	
+	<a class="HeaderIcons myBtn" href="#"> <img src="IconSrc/MenuButton.png" width="32px" height="32px"> </a>
+	
+	<a class="HeaderIcons SocialIcons" href="#"> <img src="IconSrc/LinkedSmlOr.png" width="24px" height="24px"> </a>
+	
+	<a class="HeaderIcons SocialIcons" href="#"> <img src="IconSrc/FacebookSml.png" width="24px" height="24px"> </a>
+	
+	<a class="HeaderIcons SocialIcons" href="#"> <img src="IconSrc/TwitterSml.png" width="24px" height="24px"> </a>
+	
+</header>
+  
+ 
+  
+<!-- Slideshow container -->
+<div class="slideshow-container" > 
+ <!--Nav-->
+  <nav>
+    
+	<a href="#"> Home</a>
+	<a href="#"> Services</a>
+	<a href="#"> Our Partners</a>
+	<a href="#"> About Us</a>
+	<a href="#"> Contact Us</a>
+	
+  </nav>
+
+  <div class="mySlides fade" id="Slide3">
+    <div class="numbertext">
+	
+	<h1> SYSTEM INTEGRATION | DATA CENTRE & CLOUD MANAGEMENT </h1>
+	<p style="margin-top: 20px;"> As an innovative partner, ITQULATE will consistently deliver solutions that incorporate best practice strategies. </p>
+	<a href="#" id="WhatsAppRef"> Get in touch <img src="IconSrc/callblack.png" width="48px" height="48px" style="vertical-align:middle;">  </a>
+	</div>
+	
+  </div>
+ </div>
+ 
+
+<!-- Article section -->
+
+  <article style="width:100%;padding:10px;padding-top:20px;padding-bottom:20px;text-align:center;">
+    <h3 style="color:#cacaca;font-size:1em;"> DISCOVER OUR COMPANY</h3>
+    <h1 style="color:#121a27;font-size:2em;"> We are customer centric. We offer truly <span style="color:#f89423;">prominent IT Solutions.</span> </h1>
+    <br>
+	<p>ITQULATE offers a complete and diverse range of ICT and infrastructure Solutions.</p>
+	<button class="LearnAbout Overview"> Our Mission </button>
+	<button class="LearnAbout Overview"> Our Services </button>
+	<button class="LearnAbout"> Our Partners  </button>
+	<button class="LearnAbout Overview"> Our People </button>
+  </article>
 
 <!--Website Main Content -->
-<main>
+  <main>
 
-<div class="flextest">
+    <div class="flextest">
 <!--section-->
-<div class="box img1" id="green">
+      <div class="box img1" id="green">
 	
 	
 	</div>
 <!--section-->	
-    <div class="box box1" id="red" style="color: grey;" onmouseover="mFunction()" onmouseleave="myFunction()">
-	<h1>SYSTEMS | IT INFRASTRUCTURE SOLUTIONS</h1>
+    <div class="box box1" id="red" style="color: grey;">
+	  
+	  <h1 onclick="openPage()" onmouseover="" style="cursor: pointer;">ABOUT US</h1>
 
-<p style="margin-top: 20px;">ITqulate offers a complete and diverse range of ICT and infrastructure Solutions.
-<br>
-<br>
-<br>
-<br>
-The offering includes a suite of managed solutions from ICTI, Networks and Servers to
-End User Computing. ITqulate has built strong relationships with established
-multinational manufacturers and is geared to offering a Complete IT solution
-to both Private and Public Sectors. <span id="Continue"> <br> This encompasses the 
-holistic management of data centres to ensure 100% uptime of the network, servers 
-and storage in the facility. <br><br> The success of an automation project depends 
-essentially on the execution of the systems integration.</span>
+      <p style="margin-top: 80px;">Founded in 2015, ITqulate is a majority Black-woman-owned ICT solutions company focused on strategies that enable 
+      operational efficiency for companies with a ‘growth mindset’ Our holistic approach ensures that all our clients benefit from the value we contribute
+      across the entire
+      ICT value chain. </p>
 
-</p>
-
-<a href="#">Discover More &#10095;</a>
-
-<script>
-function mFunction() {
-document.getElementById("green").style.display="none";
-document.getElementById("Continue").style.display="block";
-document.getElementById("red").style.width="100%";
-}
-</script>
-<script>
-function myFunction() {
-document.getElementById("green").style.display="block";
-document.getElementById("Continue").style.display="none";
-document.getElementById("red").style.width="50%";
-}
-</script>
+      <a href="#">Discover More &#10095;</a>
 
 	</div>
+
 <!--section-->	
-    <div class="box mid" id="red" style="color: grey;">
-	<h1>CLOUD SERVICES</h1>
+    <div class="box box1 Overview" id="red" style="color: grey;" >
+	  
+	  <h1 onclick="openPage()" onmouseover="" style="cursor: pointer;">OUR VISION</h1>
 
-<p style="margin-top: 20px;">Think of ITqulate Systems as your cloud partner. Migrating to the cloud increases productivity 
-and frees employees to work anytime from any location. Whether you are preparing to move to the Cloud or are already there, our Cloud Services practice 
-can help you make the most of your Cloud decisions.
-<br>
-<br>
-As an innovative partner, ITqulate will consistently deliver solutions that incorporate best practice strategies. 
+      <p style="margin-top: 80px;">Our business philosophy is based on the belief that technology solutions should always be in line with the client’s 
+	  business strategy and should be implemented with the sole purpose of enhancing their performance as a business. </p>
 
-</p>
-
-<a href="#">Discover More &#10095;</a>
-
-	</div>	
-<!--section-->
-<div class="box mid img2" id="green">
-	
-	
-	</div>
-
-<!--section-->
-<div class="box img3" id="green">
-	
-	
-	</div>
-<!--section-->	
-    <div class="box" id="red" style="color: grey;">
-	<h1>DATA CENTRE MANAGEMENT | SYSTEM INTEGRATION</h1>
-
-<p style="margin-top: 20px;">This encompasses the holistic management of data centres to ensure 100% 
-uptime of the network, servers and storage in the facility.
-<br>
-<br>
-<br>
-<br>
-The success of an automation project depends essentially on the execution of the systems integration.
-The key factors in a successful systems integration project are: A clear identification and understanding of the process and automation objectives.
-
-</p>
-
-<a href="#">Discover More &#10095;</a>
+      <a href="#">Discover More &#10095;</a>
 
 	</div>
 	
-</div>
+	<!--section-->
+      <div class="box img2 Overview" id="green">
+    </div>
 
-
-</main>
+    </main>
+	
+	<section class="Industries">
+	  
+	  <h1 style="color:#121a27;font-size:2em;"> INDUSTRIES WE SERVE <br> <span style="color:#f89423;">ICT AND INFRASTRUCTURE SOLUTIONS</span> </h1>
+	  
+	  <div class="ServicesContainer">
+	  
+	  <div class="services"> 
+	  
+	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > IT INFRASTRUCTURE</h4>
+		
+		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
+		to both Private and Public Sectors. </p>
+		
+		<a href="#">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services"> 
+	  
+	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > DATA CENTER MANAGEMENT</h4>
+		
+		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
+		to both Private and Public Sectors. </p>
+		
+		<a href="#">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services Overview"> 
+	  
+	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > SYSTEMS INTERGRATION</h4>
+		
+		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
+		to both Private and Public Sectors. </p>
+		
+		<a href="#">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services"> 
+	  
+	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > ENTERPRISE MANAGEMENT</h4>
+		
+		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
+		to both Private and Public Sectors. </p>
+		
+		<a href="#">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services Overview"> 
+	  
+	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > INFORMATION ANALYTICS</h4>
+		
+		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
+		to both Private and Public Sectors. </p>
+		
+		<a href="#">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services"> 
+	  
+	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > CLOUD SERVICES </h4>
+		
+		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
+		to both Private and Public Sectors. </p>
+		
+		<a href="#">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	</div>
+	</section>
 
 <!--Website Footer -->
   <footer>
@@ -126,7 +204,7 @@ The key factors in a successful systems integration project are: A clear identif
   
       <div class="FooterContent" id="Fc1">
 	  
-	    <img src="itqulatelogowhite.png">
+	    <img src="Images/itqulatelogowhite.png">
 		
 		<a href="#">377 Rivonia Boulevard Edenburg</a>
 		
@@ -136,46 +214,31 @@ The key factors in a successful systems integration project are: A clear identif
 		
         <a href="#" style="color:#f89423;">www.itqulate.co.za</a>
 		
-		<a class="SocialFooter" href="#"><img src="FacebookMidWht.png" alt="Social Media Icons" width="31px" height="32px"></a>
-		<a class="SocialFooter" href="#"><img src="TwitterMidWht.png" alt="Social Media Icons" width="31px" height="32px"></a>
-		<a class="SocialFooter" href="#"><img src="InstagramMidWht.png" alt="Social Media Icons" width="31px" height="32px"></a>
-		<a class="SocialFooter" href="#"><img src="LinkedMidWht.png" alt="Social Media Icons" width="31px" height="32px"></a>
+		<p style="padding-top: 40px; font-weight:bold;"> Connect with us: <p>
 		
-		<p> &copy 2023 ITqulate Solutions. All Rights Reserved. </p>
+		<a class="SocialFooter" href="#"><img src="IconSrc/FacebookMidWht.png" alt="Social Media Icons" width="32px" height="32px"></a>
+		<a class="SocialFooter" href="#"><img src="IconSrc/TwitterMidWht.png" alt="Social Media Icons" width="32px" height="32px"></a>
+		<a class="SocialFooter" href="#"><img src="IconSrc/InstagramMidWht.png" alt="Social Media Icons" width="32px" height="32px"></a>
+		<a class="SocialFooter" href="#"><img src="IconSrc/LinkedMidWht.png" alt="Social Media Icons" width="32px" height="32px"></a>
 		
 	  </div>
 	
-	  <div class="FooterContent" id="Fc2">
-	  
-	    <h3> IT SERVICE </h3>
-		
-		<a href="#">Managed IT</a>
-		
-		<a href="#">IT Support</a>
-		
-		<a href="#">IT Consultancy</a>
-		
-		<a href="#">Cloud Computing</a>
-		
-		<a href="#">Cyber Security</a>
-		
-		
-	  
-	  </div>
 	
 	  <div class="FooterContent" id="Fc3">
 	  
 	    <h3> QUICK LINKS </h3>
 		
+		<br>
+		
 		<a href="#">Home</a>
 		
 		<a href="#">Services</a>
 		
-		<a href="#">IT Management</a>
+		<a href="#" style="margin-left:10px;">Solutions & Services</a>
 		
-		<a href="#">Solutions</a>
+		<a href="#" style="margin-left:10px;">Systems</a>
 		
-		<a href="#">Partners</a>
+		<a href="#">Our Partners</a>
 		
 		<a href="#">About Us</a>
 		
@@ -186,6 +249,8 @@ The key factors in a successful systems integration project are: A clear identif
 	  <div class="FooterContent" id="Fc4">
 	  
 	    <h3> SUPPORT LINKS </h3>
+		
+		<br>
 		
 		<a href="#">Customer Support</a>
 		
@@ -198,8 +263,9 @@ The key factors in a successful systems integration project are: A clear identif
 	  </div>
 	  
     </div>
+	<p style="display:block;padding-top:80px !important;clear:left;color:white;padding:10px;"> &copy 2023 ITQULATE SOLUTIONS. All Rights Reserved. </p>
   </footer>
-  
+
 </body>
 
 </html>

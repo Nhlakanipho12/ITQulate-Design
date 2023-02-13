@@ -1,0 +1,36 @@
+header {
+	width: 100%;
+	padding: 10px;
+	background-color: white;
+	border-bottom: 2px solid #f89423;
+	position: fixed;
+	z-index: 3000000;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.myBtn {
+	display: none!important;
+}
+
+.HeaderIcons {
+	float: right;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.SocialIcons {
+	margin-top: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+	.myBtn {
+		display: inline-block !important;
+	}
+	
+	.SocialIcons {
+		display: none;
+	}
+}

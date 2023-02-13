@@ -23,14 +23,11 @@ footer {
 	width: 40%;
 }
 
-#fc2, #Fc3, #Fc4 {
-	width: 20%;
+#Fc3, #Fc4 {
+	width: 25%;
 	margin-left: 10px;
 }
 
-#Fc3 {
-	margin-left: 80px;
-}
 
 .FooterContent h3 {
 	color:white;
@@ -54,7 +51,6 @@ footer {
 	height:32px;
 	float: left;
 	margin-left: 10px;
-	margin-top: 40px !important;
 }
 
 #Fc1 p {
@@ -62,7 +58,7 @@ footer {
 	width: 100%;
 	color: white;
 	clear: left;
-	padding-top: 80px !important;
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -72,13 +68,13 @@ footer {
 		margin-left: 0px;
 	}
 	
-	#Fc1, #fc2, #Fc3, #Fc4 {
+	#Fc1, #Fc3, #Fc4 {
 		width: 100%;
 		margin-left: 0px;
 		padding-bottom: 10px;
 	}
 	
-	#fc2, #Fc3, #Fc4 {
+	#Fc3, #Fc4 {
 		margin-top: 40px;
 	}
 	
