@@ -11,8 +11,8 @@ header a {
 	text-decoration: none;
 }
 
-.myBtn {
-	display: none!important;
+#myBtn {
+	display: none;
 }
 
 .HeaderIcons {
@@ -26,7 +26,7 @@ header a {
 }
 
 @media screen and (max-width: 1024px) {
-	.myBtn {
+	#myBtn {
 		display: inline-block !important;
 	}
 	

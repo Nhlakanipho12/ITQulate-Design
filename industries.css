@@ -1,0 +1,80 @@
+
+.Industries {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	padding-top: 80px;
+}
+
+.Industries  h1 {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.ServicesContainer {
+	width: 90vw;
+	height: auto;
+	margin: 0 auto;
+}
+
+.services {
+	display: block;
+	width: 30%;
+	height: 220px;
+	padding: 10px;
+	color: #757575;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+}
+
+.services:hover {
+	box-shadow: 10px 10px 50px #bdbec3;
+	border-radius: 5px;
+}
+
+.services p{
+	margin-top: 10px;
+}
+
+.services a {
+	text-decoration: none;
+	color: #f89423;
+	display: block;
+	margin-top: 20px;
+}
+
+.services a:hover {
+	color: #121a27;
+}
+
+@media screen and (max-width: 1152px) {
+	.services {
+		width: 45%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.Industries {
+		height: auto;
+		width: 100%;
+	}
+	
+	.ServicesContainer {
+		width: 100%;
+		height: auto;
+	}
+	.services {
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+	}
+	
+	.Hideservices {
+		display: none;
+	}
+		
+}

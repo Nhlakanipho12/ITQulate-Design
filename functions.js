@@ -1,4 +1,23 @@
 
+window.onscroll = function() {
+   document.getElementById("myBtn").style.display="inline-block";
+}
+
+//scroll to view function
+function viewscroll() {
+const element = document.getElementById("GetArticle");
+element.scrollIntoView();
+}
+
+function viewscroll2() {
+const element = document.getElementById("IndustriesOverview");
+element.scrollIntoView();
+}
+
+/* About us Heading opens page*/
+function openServices() {
+	      window.open("https://www.google.com");
+	    }
 /* About us Heading opens page*/
 function openPage() {
 	      window.open("https://www.google.com");

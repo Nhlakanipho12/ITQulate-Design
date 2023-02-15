@@ -1,0 +1,53 @@
+.Overview {
+	width: 90vw;
+	height: 460px;
+	margin: 0 auto;
+}
+
+.OverviewContent {
+	width: 50%;
+	height: 460px;
+	float: left;
+}
+
+#OContent-1 {
+	background-image: url('Images/1661866793804.jpg');
+	background-size: cover;
+}
+
+#OContent-2 {
+	padding: 80px;
+}
+
+#OContent-2 h1 {
+	display:block;
+	padding: 10px;
+	border-left: 2px solid #f89423;
+	color:#121a27;
+}
+
+#OContent-2 h1:hover {
+	color: #f89423;
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.Overview {
+		width: 100%;
+		height: auto;
+	}
+	
+	.OverviewContent {
+		width: 100%;
+		clear: left;
+	}
+	
+	#OContent-1 {
+		height: 400px;
+	}
+	
+	#OContent-2 {
+		padding: 10px;
+		height: auto;
+	}
+}

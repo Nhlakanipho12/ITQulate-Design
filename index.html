@@ -9,14 +9,19 @@
    
   <title> ITQULATE SOLUTIONS | SYSTEMS, IT INFRASTRUCTURE SOLUTIONS </title>
   
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Footer.css">
-  <link rel="stylesheet" href="MainContent.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="articleabout.css">
+  <link rel="stylesheet" href="overview.css">
+  <link rel="stylesheet" href="industries.css">
+  <link rel="stylesheet" href="Footer.css">
+  <link rel="stylesheet" href="ModalMenu.css">
 
-  
+
+
   <script src="functions.js"></script>
 
   <meta name="keywords" content="Services, Information Technology, Security, Security Services, Cleaning Services, IT, IT Services, Networking">
@@ -30,9 +35,7 @@
 
 <header>
 
-    <a id="LogoImage" href="#"> <img src="Images/itqulatelogo.png" width="102px" height="32px"> </a>
-	
-	<a class="HeaderIcons myBtn" href="#"> <img src="IconSrc/MenuButton.png" width="32px" height="32px"> </a>
+    <a id="LogoImage" href="./index.html"> <img src="Images/itqulatelogo.png" width="102px" height="32px"> </a>
 	
 	<a class="HeaderIcons SocialIcons" href="#"> <img src="IconSrc/LinkedSmlOr.png" width="24px" height="24px"> </a>
 	
@@ -40,90 +43,146 @@
 	
 	<a class="HeaderIcons SocialIcons" href="#"> <img src="IconSrc/TwitterSml.png" width="24px" height="24px"> </a>
 	
-</header>
-  
- 
-  
-<!-- Slideshow container -->
-<div class="slideshow-container" > 
- <!--Nav-->
-  <nav>
-    
-	<a href="#"> Home</a>
-	<a href="#"> Services</a>
-	<a href="#"> Our Partners</a>
-	<a href="#"> About Us</a>
-	<a href="#"> Contact Us</a>
+		<!-- Trigger/Open The Modal -->	
+	<a class="HeaderIcons myBtn" id="myBtn" href="#"> <img src="IconSrc/MenuButton.png" width="32px" height="32px"> </a>
 	
-  </nav>
+	<!-- The Modal -->
+<div id="myModal" class="modal">
 
-  <div class="mySlides fade" id="Slide3">
-    <div class="numbertext">
-	
-	<h1> SYSTEM INTEGRATION | DATA CENTRE & CLOUD MANAGEMENT </h1>
-	<p style="margin-top: 20px;"> As an innovative partner, ITQULATE will consistently deliver solutions that incorporate best practice strategies. </p>
-	<a href="#" id="WhatsAppRef"> Get in touch <img src="IconSrc/callblack.png" width="48px" height="48px" style="vertical-align:middle;">  </a>
-	</div>
-	
+  <!-- Modal content -->
+  <div class="modal-content">
+  
+    <span class="close"> &times;</span>
+
+       <img src="Images/itqulatelogo.png">
+	   <br>
+	   <br>
+	   <br>
+	   <a class="MenuLinks" href="index.html"> HOME </a>
+	   <a class="MenuLinks" href="services/services.html"> SERVICES </a>
+	   <a class="MenuLinks" href="partners/partners.html"> OUR PARTNERS </a>
+	   <a class="MenuLinks" href="about/aboutus.html"> ABOUT US </a>
+	   <a class="MenuLinks" href="contactus/contactus.html"> CONTACT US </a>
+
+	   <p style="padding-top: 40px;font-weight:bold;color:grey;"> Connect with us: <p>
+	   <a id="SocialMenuIcon" href=""> <img id="SocialMIcon" src="IconSrc/FacebookMidOr.png" alt="SocialMenuIcon" width="32" Height="32" style="vertical-align: middle;"> </a>
+	   <a id="SocialMenuIcon" href=""> <img id="SocialMIcon" src="IconSrc/TwitterMidOr.png" alt="SocialMenuIcon" width="32" Height="32" style="vertical-align: middle;"> </a>
+	   <a id="SocialMenuIcon" href=""> <img id="SocialMIcon" src="IconSrc/InstagramMidOr.png" alt="SocialMenuIcon" width="32" Height="32" style="vertical-align: middle;"> </a>
+	   <a id="SocialMenuIcon" href=""> <img id="SocialMIcon" src="IconSrc/LinkedMidOr.png" alt="SocialMenuIcon" width="32" Height="32" style="vertical-align: middle;"> </a>
+	   
+	   <p style="color:grey;position:absolute;bottom: 10px;">&copy 2023 ITQULATE SOLUTIONS. All Rights Reserved. </p>
+	   
   </div>
- </div>
- 
 
-<!-- Article section -->
+</div>
 
-  <article style="width:100%;padding:10px;padding-top:20px;padding-bottom:20px;text-align:center;">
-    <h3 style="color:#cacaca;font-size:1em;"> DISCOVER OUR COMPANY</h3>
-    <h1 style="color:#121a27;font-size:2em;"> We are customer centric. We offer truly <span style="color:#f89423;">prominent IT Solutions.</span> </h1>
-    <br>
-	<p>ITQULATE offers a complete and diverse range of ICT and infrastructure Solutions.</p>
-	<button class="LearnAbout Overview"> Our Mission </button>
-	<button class="LearnAbout Overview"> Our Services </button>
-	<button class="LearnAbout"> Our Partners  </button>
-	<button class="LearnAbout Overview"> Our People </button>
-  </article>
+  <!-- Modal script -->
+<script>
+//Modal Menu function
+// Get the modal
+var modal = document.getElementById('myModal');
 
-<!--Website Main Content -->
-  <main>
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-    <div class="flextest">
-<!--section-->
-      <div class="box img1" id="green">
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	
+</header>
+
+<!-- Landing Page Banner -->
+<!-- Landing Page Banner -->
+<main>
+
+<!-- Navigation -->
+    <nav>
+    
+	  <a href="index.html"> Home</a>
+	  <a href="services/services.html"> Services</a>
+	  <a href="partners/partners.html"> Our Partners</a>
+	  <a href="about/aboutus.html"> About Us</a>
+	  <a href="contactus/contactus.html"> Contact Us</a>
+	
+    </nav>
 	
 	
-	</div>
-<!--section-->	
-    <div class="box box1" id="red" style="color: grey;">
+<!-- Banner Content -->
+  <div class="BannerContent">
+    
+	
+	  <h1> SYSTEM INTEGRATION, DATA CENTRE & CLOUD MANAGEMENT </h1>
 	  
-	  <h1 onclick="openPage()" onmouseover="" style="cursor: pointer;">ABOUT US</h1>
-
-      <p style="margin-top: 80px;">Founded in 2015, ITqulate is a majority Black-woman-owned ICT solutions company focused on strategies that enable 
-      operational efficiency for companies with a ‘growth mindset’ Our holistic approach ensures that all our clients benefit from the value we contribute
-      across the entire
-      ICT value chain. </p>
-
-      <a href="#">Discover More &#10095;</a>
-
-	</div>
-
-<!--section-->	
-    <div class="box box1 Overview" id="red" style="color: grey;" >
+	  <p style="margin-top: 20px;"> As an innovative partner, ITQULATE will consistently deliver solutions that incorporate best practice strategies. </p>
 	  
-	  <h1 onclick="openPage()" onmouseover="" style="cursor: pointer;">OUR VISION</h1>
 
-      <p style="margin-top: 80px;">Our business philosophy is based on the belief that technology solutions should always be in line with the client’s 
+	  
+	  <a href="contactus/contactus.html" id="WhatsAppRef"> Get in touch <img src="IconSrc/callblack.png" width="48px" height="48px" style="vertical-align:middle;"> </a>
+	  
+     
+  </div>
+
+</main>
+<!-- Landing Page Banner Close-->
+<!-- Landing Page Banner Close -->
+
+<!-- Article About Us  -->
+<!-- Article About Us  -->
+<article class="AboutIT" id="GetArticle">
+
+  <h3 style="color:#cacaca;font-size:1rem;"> DISCOVER OUR COMPANY</h3>
+  <h1 style="color:#121a27;font-size:2.5rem;"> WE OFFER TRULY <span style="color:#f89423;">PROMINENT IT SOLUTIONS.</span> </h1>
+  <br>
+  <p style="text-align:center-justify;">Founded in 2015, ITqulate is a majority Black-woman-owned ICT solutions company focused on strategies that enable 
+     operational efficiency for companies with a ‘growth mindset’. Our holistic approach ensures that all our clients benefit from the value we contribute
+     across the entire ICT value chain.
+  </p>
+
+</article>
+<!-- Article About Us Close -->
+<!-- Article About Us Close -->
+
+
+<!-- Section About Us Overview -->
+<!-- Section About Us Overview -->
+<section class="Overview">
+
+  <div class="OverviewContent" id="OContent-1">
+  </div>
+  
+  <div class="OverviewContent" id="OContent-2">
+  
+    <h1 onmouseover="" style="cursor: pointer;" > OUR VISION </h1>
+
+    <p style="margin-top: 80px;">Our business philosophy is based on the belief that technology solutions should always be in line with the client’s 
 	  business strategy and should be implemented with the sole purpose of enhancing their performance as a business. </p>
+  </div>
 
-      <a href="#">Discover More &#10095;</a>
+</section>
+<!-- Section About Us Overview Close -->
+<!-- Section About Us Overview Close -->
 
-	</div>
-	
-	<!--section-->
-      <div class="box img2 Overview" id="green">
-    </div>
 
-    </main>
-	
-	<section class="Industries">
+<!-- Industries We Serve Overview -->
+<!-- Industries We Serve Overview -->
+<section class="Industries" id="IndustriesOverview">
 	  
 	  <h1 style="color:#121a27;font-size:2em;"> INDUSTRIES WE SERVE <br> <span style="color:#f89423;">ICT AND INFRASTRUCTURE SOLUTIONS</span> </h1>
 	  
@@ -133,71 +192,69 @@
 	  
 	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > IT INFRASTRUCTURE</h4>
 		
-		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
-		to both Private and Public Sectors. </p>
+		<p> The offering includes a suite of managed solutions from ICTI, Networks and Servers to End User Computing.  </p>
 		
-		<a href="#">Discover More &#10095;</a>
+		<a href="services/services.html">Discover More &#10095;</a>
 	  
 	  </div>
 	  
 	  <div class="services"> 
 	  
-	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > DATA CENTER MANAGEMENT</h4>
+	    <h4> <img src="IconSrc/screenload2.png" width="64px" height="64px" style="vertical-align: middle;" > DATA CENTER MANAGEMENT</h4>
 		
-		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
-		to both Private and Public Sectors. </p>
+		<p> This encompasses the holistic management of data centres to ensure 100% uptime of the network, servers and storage in the facility. </p>
 		
-		<a href="#">Discover More &#10095;</a>
+		<a href="services/services.html">Discover More &#10095;</a>
 	  
 	  </div>
 	  
-	  <div class="services Overview"> 
+	  <div class="services Hideservices"> 
 	  
-	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > SYSTEMS INTERGRATION</h4>
+	    <h4> <img src="IconSrc/screenload3.png" width="64px" height="64px" style="vertical-align: middle;" > SYSTEMS INTERGRATION</h4>
 		
-		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
-		to both Private and Public Sectors. </p>
+		<p> The success of an automation project depends essentially on the execution of the systems integration. </p>
 		
-		<a href="#">Discover More &#10095;</a>
-	  
-	  </div>
-	  
-	  <div class="services"> 
-	  
-	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > ENTERPRISE MANAGEMENT</h4>
-		
-		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
-		to both Private and Public Sectors. </p>
-		
-		<a href="#">Discover More &#10095;</a>
-	  
-	  </div>
-	  
-	  <div class="services Overview"> 
-	  
-	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > INFORMATION ANALYTICS</h4>
-		
-		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
-		to both Private and Public Sectors. </p>
-		
-		<a href="#">Discover More &#10095;</a>
+		<a href="services/services.html">Discover More &#10095;</a>
 	  
 	  </div>
 	  
 	  <div class="services"> 
 	  
-	    <h4> <img src="IconSrc/screenload.png" width="64px" height="64px" style="vertical-align: middle;" > CLOUD SERVICES </h4>
+	    <h4> <img src="IconSrc/screenload4.png" width="64px" height="64px" style="vertical-align: middle;" > ENTERPRISE MANAGEMENT</h4>
 		
-		<p> ITqulate has built strong relationships with established multinational manufacturers and is geared to offering a Complete IT solution
-		to both Private and Public Sectors. </p>
+		<p>We offer a comprehensive approach to content management</p>
 		
-		<a href="#">Discover More &#10095;</a>
+		<a href="services/services.html">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services Hideservices"> 
+	  
+	    <h4> <img src="IconSrc/screenload5.png" width="64px" height="64px" style="vertical-align: middle;" > INFORMATION ANALYTICS</h4>
+		
+		<p>Accurate information results in accurate decision making, and can turn multiple and disparate data into business intelligence (BI). </p>
+		
+		<a href="services/services.html">Discover More &#10095;</a>
+	  
+	  </div>
+	  
+	  <div class="services"> 
+	  
+	    <h4> <img src="IconSrc/screenload6.png" width="64px" height="64px" style="vertical-align: middle;" > CLOUD SERVICES </h4>
+		
+		<p>Migrating to the cloud increases productivity and frees employees to work anytime from any location.</p>
+		
+		<a href="services/services.html">Discover More &#10095;</a>
 	  
 	  </div>
 	  
 	</div>
-	</section>
+</section>
+<!-- Industries We Serve Overview Close -->
+<!-- Industries We Serve Overview Close -->
 
+
+<!--Website Footer -->
 <!--Website Footer -->
   <footer>
     <div class="FooterHolder">
@@ -230,19 +287,15 @@
 		
 		<br>
 		
-		<a href="#">Home</a>
+		<a href="index.html">Home</a>
 		
-		<a href="#">Services</a>
+		<a href="services/services.html">Services</a>
 		
-		<a href="#" style="margin-left:10px;">Solutions & Services</a>
+		<a href="partners/partners.html">Our Partners</a>
 		
-		<a href="#" style="margin-left:10px;">Systems</a>
+		<a href="about/aboutus.html">About Us</a>
 		
-		<a href="#">Our Partners</a>
-		
-		<a href="#">About Us</a>
-		
-		<a href="#">Contact Us</a>
+		<a href="contactus/contactus.html">Contact Us</a>
 		
 	  </div>
 	
@@ -252,10 +305,6 @@
 		
 		<br>
 		
-		<a href="#">Customer Support</a>
-		
-		<a href="#">Help and FAQ</a>
-		
 		<a href="#">Privacy Policy</a>
 		
 		<a href="#">Cookies Policies</a>
@@ -264,7 +313,9 @@
 	  
     </div>
 	<p style="display:block;padding-top:80px !important;clear:left;color:white;padding:10px;"> &copy 2023 ITQULATE SOLUTIONS. All Rights Reserved. </p>
-  </footer>
+</footer>
+<!--Website Footer Close -->
+<!--Website Footer Close -->
 
 </body>
 
